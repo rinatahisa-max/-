@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(138, 45, 59, 0.14), transparent 34rem),
+    linear-gradient(180deg, #fffdf8 0%, #f8f1e6 55%, #fffdf8 100%);
+  color: #1b1717;
+}
+
+::selection {
+  background: #8a2d3b;
+  color: white;
+}
+
+.container {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.kicker {
+  @apply inline-flex rounded-full border border-wine-200 bg-white/70 px-4 py-2 text-sm font-medium text-wine-700 shadow-sm backdrop-blur;
+}
+
+.card {
+  @apply rounded-3xl border border-wine-100/80 bg-white/80 p-6 shadow-card backdrop-blur;
+}
+
+.input {
+  @apply w-full rounded-2xl border border-wine-100 bg-white px-4 py-3 text-sm outline-none transition focus:border-wine-500 focus:ring-4 focus:ring-wine-100;
+}
+
+.label {
+  @apply text-sm font-semibold text-ink;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl bg-wine-600 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-wine-700;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-2xl border border-wine-200 bg-white px-5 py-3 text-sm font-semibold text-wine-700 transition hover:border-wine-500 hover:bg-wine-50;
+}
